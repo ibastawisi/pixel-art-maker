@@ -37,5 +37,5 @@ submit.addEventListener('click', function (event) {
 
 // canvas click event
 canvas.addEventListener('click', function (event) {
-    event.target.style.backgroundColor = colorPicker.value;
+    if (event.target.nodeName === 'TD') { event.target.style.backgroundColor = colorPicker.value; }
 });
